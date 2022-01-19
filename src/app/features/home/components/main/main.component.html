@@ -1,0 +1,9 @@
+<div class= "container-button">
+<button (click)="changeColor()">Change Color</button>
+</div>
+<div class="main-container" [ngClass]="{'main-container--color': isColor}">
+  
+    <ng-container *ngFor="let item of main">
+        <app-item [item]="item"></app-item>
+    </ng-container>
+</div>
